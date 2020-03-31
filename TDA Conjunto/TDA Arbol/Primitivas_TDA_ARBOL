@@ -1,0 +1,49 @@
+EL TDA ARBOL
+
+Usaremos un valor especial ARBOL_VACIO para el caso en que el árbol no contenga nodos, y
+NODO_NULO para expresar que un nodo no existe.
+
+Primitivas del TDA Arbol
+
+CREAR_Arbol: crea un árbol.
+Precondición : no tiene
+Postcondición.: el árbol vacío.
+
+DESTRUIR. libera los recursos que mantienen el árbol .
+Precondición: el árbol debe haber sido creado
+
+PADRE (de un nodo): esta función recibe el valor de un nodo y devuelve el padre del nodo en el árbol.
+Si el nodo no tiene padre, devuelve NODO_NULO
+Precondición: el nodo pasado al método no es nulo .
+Postcondición: ninguna.
+
+HIJO_IZQUIERDA(de un nodo): devuelve el descendente más a la izquierda en el siguiente nivel del nodo
+recibido en el árbol. Devuelve NODO_NULO si el nodo recibido no tiene hijo a la izquierda.
+Precondición: el nodo recibido no es nulo.
+Postcondición: ninguna.
+
+HERMANO_DERECHO(de un nodo): devuelve el descendiente (a la derecha del nodo recibido) del padre
+del nodo, en el árbol
+Precondición : el nodo recibido no es nulo.
+Postcondición: no tiene .
+
+RAIZ(T). Devuelve el nodo que está en la raíz del árbol o NODO_NULO si el árbol está vacío.
+Precondición: el árbol debe haber sido creado.
+Postcondición: no tiene.
+
+INSERTAR_HIJO_IZQUIERDA (de un nodo determinado): inserta un árbol recibido como hijo a la
+izquierda de un nodo determinado que pertenece al árbol .
+Precondición : el árbol debe haber sido creado, y no estar vacío y el nodo recibido no es nulo.
+Postcondición: el árbol alterado con el nuevo nodo agregado
+
+INSERTAR_HERMANO_DERECHA(de un nodo determinado): inserta el árbol recibido como hermano
+a la derecha de un nodo que pertenece al árbol .
+Precondición : el árbol debe haber sido creado, y no estar vacío y el nodo recibido no es nulo.
+Precondición : el árbol ha sido creado y no está vacío y el nodo recibido no es nulo.
+
+PODAR_HIJO_IZQUIERDA(de un nodo determinado): devuelve el subárbol con raíz hijo a la izquierda
+del nodo recibido. Al nodo recibido se le elimina el hijo izquierdo.del árbol
+Precondición : el árbol ha sido creado y el nodo recibido no es nulo.
+Postcondición: árbol alterado por la eliminación del subárbol.
+
+PODAR_HERMANO_DERECHA: idem operación anterior, pero a derecha
